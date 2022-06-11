@@ -1,0 +1,17 @@
+$bgc1:rgba(0, 0, 0, 0);
+$bgc2: rgba(0, 0, 0, 0.7);
+$bgc3:rgb(0, 0, 0);
+$clr-nautral-900: hsl(207,19%,9%);
+$clr-nautral-100:hsl(0,0%,100%);
+$clr-accent-400: #9453a6;
+$clr--accent-300: #f2cc06;
+
+
+@import './global';
+@import './navbar';
+@import './carousel';
+@import './section';
+@import './card';
+@import './footer';
+@import './about';
+@import './media';

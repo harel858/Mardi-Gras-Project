@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="/sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i><img src="/photos/logo.png" alt="" id="logo"></i> Mardi Gras New
+                Orleans</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/about.html" id="offcanvasNavbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Media
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/media.html">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br>
+    <header>
+        <h1>Media Room</h1>
+    </header>
+    <main class="container">
+        <div class="row row-cols-2">
+            <div class="col d-flex flex-wrap" id="boxes">
+                <a data-fancybox="gallery" href="/photos/woman-big.jpg" data-caption="image one">
+                    <img src="/photos/woman-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/predator-big.jpg" data-caption="image two">
+                    <img src="/photos/predator-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/home-bg.png" data-caption="image three">
+                    <img src="/photos/home-sm.png">
+                </a>
+                <a data-fancybox="gallery" href="/photos/dogs-big.jpg" data-caption="image four">
+                    <img src="/photos/dogs-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/indian-big.jpg" data-caption="image five">
+                    <img src="/photos/indian-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/cop-bg.jpg" data-caption="image six">
+                    <img src="/photos/cop-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/flote-big.png" data-caption="image seven">
+                    <img src="/photos/float-sm.png">
+                </a>
+                <a data-fancybox="gallery" href="/photos/lion-bg.png" data-caption="image seven">
+                    <img src="/photos/lion-sm.png">
+                </a>
+            </div>
+            <div class="col d-flex  flex-wrap" id="boxes">
+                <a data-fancybox="gallery" href="/photos/woman-big.jpg" data-caption="image one">
+                    <img src="/photos/woman-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/predator-big.jpg" data-caption="image two">
+                    <img src="/photos/predator-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/home-bg.png" data-caption="image three">
+                    <img src="/photos/home-sm.png">
+                </a>
+                <a data-fancybox="gallery" href="/photos/dogs-big.jpg" data-caption="image four">
+                    <img src="/photos/dogs-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/indian-big.jpg" data-caption="image five">
+                    <img src="/photos/indian-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/cop-bg.jpg" data-caption="image six">
+                    <img src="/photos/cop-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/flote-big.png" data-caption="image seven">
+                    <img src="/photos/float-sm.png">
+                </a>
+                <a data-fancybox="gallery" href="/photos/lion-bg.png" data-caption="image seven">
+                    <img src="/photos/lion-sm.png">
+                </a>
+            </div>
+            <div class="col d-flex  flex-wrap" id="boxes">
+                <a data-fancybox="gallery" href="/photos/woman-big.jpg" data-caption="image one">
+                    <img src="/photos/woman-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/predator-big.jpg" data-caption="image two">
+                    <img src="/photos/predator-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/home-bg.png" data-caption="image three">
+                    <img src="/photos/home-sm.png">
+                </a>
+                <a data-fancybox="gallery" href="/photos/dogs-big.jpg" data-caption="image four">
+                    <img src="/photos/dogs-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/indian-big.jpg" data-caption="image five">
+                    <img src="/photos/indian-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/cop-bg.jpg" data-caption="image six">
+                    <img src="/photos/cop-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/flote-big.png" data-caption="image seven">
+                    <img src="/photos/float-sm.png">
+                </a>
+                <a data-fancybox="gallery" href="/photos/lion-bg.png" data-caption="image seven">
+                    <img src="/photos/lion-sm.png">
+                </a>
+            </div>
+            <div class="col d-flex  flex-wrap" id="boxes">
+                <a data-fancybox="gallery" href="/photos/woman-big.jpg" data-caption="image one">
+                    <img src="/photos/woman-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/predator-big.jpg" data-caption="image two">
+                    <img src="/photos/predator-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/home-bg.png" data-caption="image three">
+                    <img src="/photos/home-sm.png">
+                </a>
+                <a data-fancybox="gallery" href="/photos/dogs-big.jpg" data-caption="image four">
+                    <img src="/photos/dogs-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/indian-big.jpg" data-caption="image five">
+                    <img src="/photos/indian-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/cop-bg.jpg" data-caption="image six">
+                    <img src="/photos/cop-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/flote-big.png" data-caption="image seven">
+                    <img src="/photos/float-sm.png">
+                </a>
+                <a data-fancybox="gallery" href="/photos/lion-bg.png" data-caption="image seven">
+                    <img src="/photos/lion-sm.png">
+                </a>
+            </div>
+            <div class="col d-flex  flex-wrap" id="boxes">
+                <a data-fancybox="gallery" href="/photos/woman-big.jpg" data-caption="image one">
+                    <img src="/photos/woman-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/predator-big.jpg" data-caption="image two">
+                    <img src="/photos/predator-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/home-bg.png" data-caption="image three">
+                    <img src="/photos/home-sm.png">
+                </a>
+                <a data-fancybox="gallery" href="/photos/dogs-big.jpg" data-caption="image four">
+                    <img src="/photos/dogs-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/indian-big.jpg" data-caption="image five">
+                    <img src="/photos/indian-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/cop-bg.jpg" data-caption="image six">
+                    <img src="/photos/cop-sm.jpg">
+                </a>
+                <a data-fancybox="gallery" href="/photos/flote-big.png" data-caption="image seven">
+                    <img src="/photos/float-sm.png">
+                </a>
+                <a data-fancybox="gallery" href="/photos/lion-bg.png" data-caption="image seven">
+                    <img src="/photos/lion-sm.png">
+                </a>
+            </div>
+        </div>
+    </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-around align-items-center">
+                <div class="footer-col d-flex align-items-center row">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col d-flex align-items-center row">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col d-flex align-items-center row">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+        $('[data-fancybox]').fancybox({
+            AnimationEffect: "slide"
+        })
+    </script>
+
+</body>
+
+</html>
