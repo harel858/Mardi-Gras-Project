@@ -1,12 +1,17 @@
 #boxes {
     width: 50vw;
     margin: 6% auto;
+    
 }
 #boxes a img{
     width: 100%;
     height: auto;
+    border-radius: 50%;
 }
  #boxes a{
      width: 20%;
      margin: 5px;
+ }
+ #hidden{
+     visibility: hidden;
  }
