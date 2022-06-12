@@ -1,17 +1,122 @@
-#boxes {
-    width: 50vw;
+$padding2:7rem;
+
+
+.container-floats{
+    position: relative;
+    padding: $padding2;
+    border-radius: 50%;
+    border: 5px solid black;
+    background-image: url(/photos/float-sm.png);
+    background-position: center;
+    background-size: cover;
+    transition: transform 800ms ease;
+    &:hover{
+        transform: rotate(360deg);
+    }
+
+}
+
+.container-indian{
+    position: relative;
+    padding: $padding2;
+    border-radius: 50%;
+    border: 5px solid black;
+    background-image: url(/photos/indian-big.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 800ms ease;
+    &:hover{
+        transform: rotate(360deg);
+    }
+  }
+  .container-trees{
+    position: relative;
+    padding: $padding2;
+    border-radius: 50%;
+    border: 5px solid black;
+    background-image: url(/photos/tree-big.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 800ms ease;
+    &:hover{
+        transform: rotate(360deg);
+    }
+
+  }
+ .bg{
+      
+      position: absolute;
+      padding: $padding2;
+      border-radius: 50%;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+      background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9));
+      &:hover{
+          cursor: pointer;
+           opacity: 0;
+              transition: opacity 0.5s ease-in-out;
+              
+            }
+  }
+   
+
+
+
+
+
+#custumes,
+#trees,
+#floats {
+    width: 30vw;
     margin: 6% auto;
+    position: relative;
+    display: none;
+    
+    
     
 }
-#boxes a img{
-    width: 100%;
+#custumes a img,
+#trees a img,
+#floats a img{
+    width: 50vh;
     height: auto;
     border-radius: 50%;
+    
+    
 }
- #boxes a{
-     width: 20%;
+.caption{
+    display: block;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4em;
+  font-weight: 550;
+  color: #ffffff;
+  width: fit-content;
+  font-family: 'Pattaya';
+}
+.after::after{
+      position: absolute;
+       content: "";
+       height: 4px;
+       background-color: $clr--accent-300;
+       width: 80%;
+       left: 0;
+       right: 0;
+       transform: translate(13%, -50%);
+       top: 76%;
+  }
+ #custumes a,
+#trees a,
+#floats a {
+     width: 30vh;
      margin: 5px;
+     
  }
  #hidden{
      visibility: hidden;
+     display: none;
  }
+
