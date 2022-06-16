@@ -1,9 +1,114 @@
 $padding2:7rem;
+$bg-d: #222c2a;
+$bg-l: #f3eed9;
+$bg-p:$clr-accent-500;
+
+
+.media-body h1,
+.media-body h2,
+.media-body h3{
+    color: $clr-accent-400;
+    font-family: 'Henny Penny';
+    font-weight: 900;
+    line-height: 1;
+}
+ header .h1{
+    
+    text-align: center;
+    position: relative;
+    width: 41vw;
+    margin: 3% auto;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 4px;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        background: $clr-accent-400;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 500ms ease;
+    }
+}
+ header:hover .h1::after{
+     transform: scaleX(1);
+}
+.media-body img, iframe{
+    display: block;
+    max-width: 100%;
+    border: 3px solid black;
+
+}
+.bg-l{background-color: $bg-d;
+ }
+ 
+.bg-d{
+    background-color: $bg-p;
+    color: #ffffff;
+}
+.bg-p{
+    background-color: $bg-d;
+    color: #ffffff;
+}
+.media-body section{
+    padding: 4rem 0;
+}
+.media-body header{
+    padding: 4.5rem 0;
+    margin: 0;
+   
+}
+/* @media (min-width:40em) {
+    .media-body section,
+    .media-body header{
+    padding: 4.5rem 0;
+   
+}
+
+    
+} */
+.container{
+    margin-inline: auto;
+}
+.media-body h1,
+ .media-body h2,
+ .media-body h3,
+ .media-body p{
+    margin-bottom: 1em;
+}
+.tc{
+    text-align: center;
+    margin-top: 7.2rem;
+}
+.container--narrow{
+    max-width: 34rem;
+}
+
+.split{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+@media (min-width:40em){
+    .split{
+        flex-direction: row;
+    }
+    .split > *{
+        flex-basis: 100%;
+    }
+    .split > * + *{
+        margin-left: 2em;
+    }
+}
+
+
 
 
 .container-floats{
     position: relative;
     padding: $padding2;
+    margin: 10px;
     border-radius: 50%;
     border: 5px solid black;
     background-image: url(/photos/float-sm.png);

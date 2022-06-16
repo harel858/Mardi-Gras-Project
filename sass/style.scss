@@ -5,6 +5,7 @@ $clr-nautral-900: hsl(207,19%,9%);
 $clr-nautral-100:hsl(0,0%,100%);
 $clr-accent-400: #9453a6;
 $clr--accent-300: #f2cc06;
+$clr-accent-500: #8cbf3f;
 
 
 @import './global';
@@ -15,3 +16,4 @@ $clr--accent-300: #f2cc06;
 @import './footer';
 @import './about';
 @import './media';
+@import './faq';

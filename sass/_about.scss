@@ -1,4 +1,42 @@
-main .welcome{
+$fs-xl:5rem;
+$fs-600:1.5rem;
+$fs-500:1.25rem;
+$fs-600: 1rem;
+
+.main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (min-width:40em) {
+    $fs-xl:7rem;
+    $fs-600:2rem;
+    $fs-500:1.125rem;
+}
+.head{
+    margin-top: 8rem;
+}
+@media (max-width:40em) {
+    .about-body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .about-body p{
+        padding: 4rem;
+    }
+    
+    
+}
+
+
+
+.head{
+    margin-top: 10rem;
+}
+
+ .head .welcome{
+    margin: 0;
     text-align: center;
     position: relative;
     &::after{
@@ -33,7 +71,7 @@ main .welcome{
     
 }
 
-main:hover .welcome::after{
+.head :hover .welcome::after{
      transform: scaleX(1);
 }
 
@@ -47,12 +85,13 @@ section:hover .title2::after{
 
 .maskmen{
     display: block;
-    width: 50vw;
+    width: 100vw;
     margin: 0 auto;
 }
  .maskmen img {
     width: 100%;
     height: auto;
+    border: 3px solid black;
 }
 section{
     text-align: justify;
