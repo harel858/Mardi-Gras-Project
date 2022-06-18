@@ -31,6 +31,7 @@
     font-weight: 400;
     
     
+    
 }
 
  #overlay form{
@@ -42,6 +43,7 @@
      border-radius: 3px;
      box-sizing: border-box;
      max-height: 50rem;
+     box-shadow: 0 0 20px 20px;
 }
 .form-title{
     color: black;
@@ -113,9 +115,30 @@
     min-width: 12rem;
     font-weight: 900;
     font-size: 1.5em;
-    background: linear-gradient(to right, #9453a6,#c480d7);
+    background: linear-gradient(to right, #9453a6,#9c5cad);
     color: #ffff;
+    cursor: pointer;
+    border-radius: 7px;
+    &:hover{
+        background: #672b77;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        
+    }
 }
 .error{
     color: red;
+
 }
+
+.error-border{
+     border-bottom: 3px solid red;
+    
+}
+
+#success{
+    color: $clr-accent-500;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: serif;
+}
+
