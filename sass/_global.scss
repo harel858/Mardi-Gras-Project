@@ -10,10 +10,7 @@ body{
     min-height: 100vh;
     place-items: center; */
     line-height: 1.6 !important;
-    font-family: 'Pattaya' !important;
-    font-family: 'Henny Penny' !important;
-    font-size: 1.3125 !important;
-    font-weight: 400 !important;
+    
     background-color: #fdf8e5 !important;
    
 }
@@ -21,3 +18,10 @@ body{
      width: 80vw;
      margin: 0 auto;
 }
+p{
+    font-family: 'Pattaya';
+    font-family: 'Henny Penny';
+    font-size: 1.3125;
+    font-weight: 400;
+}
+

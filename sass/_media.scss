@@ -4,9 +4,9 @@ $bg-l: #f3eed9;
 $bg-p:$clr-accent-500;
 
 
-.media-body h1,
-.media-body h2,
-.media-body h3{
+  h1,
+  h2,
+  h3{
     color: $clr-accent-400;
     font-family: 'Henny Penny';
     font-weight: 900;
@@ -37,7 +37,6 @@ $bg-p:$clr-accent-500;
 .media-body img, iframe{
     display: block;
     max-width: 100%;
-    border: 3px solid black;
 
 }
 .bg-l{background-color: $bg-d;
@@ -52,10 +51,10 @@ $bg-p:$clr-accent-500;
     color: #ffffff;
 }
 .media-body section{
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 .media-body header{
-    padding: 4.5rem 0;
+    padding: 4.5rem 0 0 0;
     margin: 0;
    
 }
@@ -76,7 +75,22 @@ $bg-p:$clr-accent-500;
  .media-body h3,
  .media-body p{
     margin-bottom: 1em;
+    font-family: 'Pattaya';
+    font-family: 'Henny Penny';
+    font-size: 1.3125;
+    font-weight: 400;
 }
+.media-body h1{
+      font-weight: 600;
+      font-size: 2em;
+      width:100%;
+
+}
+.media-body p{
+    font-size: 1.3em;
+}
+
+
 .tc{
     text-align: center;
     margin-top: 7.2rem;
@@ -148,7 +162,9 @@ $bg-p:$clr-accent-500;
     }
 
   }
- .bg{
+ .bg-custom,
+ .bg-floats,
+ .bg-trees{
       
       position: absolute;
       padding: $padding2;

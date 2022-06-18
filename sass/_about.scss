@@ -78,20 +78,19 @@ $fs-600: 1rem;
 section:hover .title2::after{
      transform: scaleX(1);
 }
-.section3:hover .title3::after{
+.mayorSec:hover .title3::after{
      transform: scaleX(1);
 }
 
 
 .maskmen{
     display: block;
-    width: 100vw;
+    width: 40em;
     margin: 0 auto;
 }
  .maskmen img {
     width: 100%;
     height: auto;
-    border: 3px solid black;
 }
 section{
     text-align: justify;
@@ -100,7 +99,7 @@ section{
 
 .mayor{
     display: block;
-    width: 40vw;
+    width: 30em;
 }
 .mayor img{
     width: 100%;
