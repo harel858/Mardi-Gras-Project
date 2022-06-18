@@ -4,10 +4,11 @@
     box-sizing: border-box;
     width: 100vw;
     font-family: 'Pattaya';
-    background-image: url(/photos/הורדה.jpg);
+    background-image: url(/photos/house4-sm.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
    
     
 }
@@ -15,7 +16,7 @@
 
 .background-c{
     background:rgba(148, 83, 166, 0.4);
-    width: 100vw;
+    width: 100%;
     
     
 } 
@@ -28,9 +29,7 @@
     font-family: 'Pattaya';
     font-size: 1.2em;
     font-weight: 400;
-    h1{
-        font-size: 2.5em;
-    }
+    
     
 }
 
@@ -42,20 +41,51 @@
      margin: 10vh auto 0 auto;
      border-radius: 3px;
      box-sizing: border-box;
-     max-height: 40rem;
+     max-height: 50rem;
 }
-#overlay form h1{
+.form-title{
     color: black;
     margin: 0;
+    font-size: 1.6em;
+    font-weight: 600;
+    padding-bottom: 1rem;
     text-align: center;
-}
-label{
-    display: block;
-    margin: 1.5em 0;
-}  
-input, textarea{
+    position: relative;
+    &::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 5px;
     width: 100%;
-    padding: 1rem;
+    background: $clr--accent-300;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+}
+ form:hover .form-title::after{
+    transform: scaleX(1);
+}
+
+.contact-main label{
+    display: block;
+    margin: 1.2em 0 0 0;
+    font-weight: 500;
+    font-size: 1em;
+}  
+.contact-main input{
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+}
+.contact-main textarea{
+    width: 100%;
+    padding: 2.5rem;
     box-sizing: border-box;
     outline: none;
     resize: none;
@@ -63,12 +93,29 @@ input, textarea{
     border-bottom: 1px solid #d3d3d3;
 }
 
-input[type="text"]:focus, textarea:focus{
+.contact-main input[type="text"]:focus, .contact-main textarea:focus{
     border-bottom: 1px solid $clr--accent-300;
 }
-textarea::-webkit-scrollbar{
+.contact-main textarea::-webkit-scrollbar{
     width: 4px;
 }
-textarea::-webkit-scrollbar-thumb{
+.contact-main textarea::-webkit-scrollbar-thumb{
     background-color: $clr--accent-300 ;
+}
+.center{
+    text-align: center;
+     
+}
+.contact-main input[type='submit']{
+    margin-top: 2rem;
+    padding: 0.7rem;
+    width: 90%;
+    min-width: 12rem;
+    font-weight: 900;
+    font-size: 1.5em;
+    background: linear-gradient(to right, #9453a6,#c480d7);
+    color: #ffff;
+}
+.error{
+    color: red;
 }
