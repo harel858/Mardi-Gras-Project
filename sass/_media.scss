@@ -4,20 +4,29 @@ $bg-l: #f3eed9;
 $bg-p:$clr-accent-500;
 
 
-  h1,
-  h2,
-  h3{
-    color: $clr-accent-400;
+  
+  .h2-media{
+    position: relative;
+    color: black;
     font-family: 'Henny Penny';
     font-weight: 900;
     line-height: 1;
-}
- header .h1{
+    padding-bottom: 5px;
     
+}
+div.container{
+    width: 50em;
+    margin: 0 auto;
+}
+.h1-a{
     text-align: center;
     position: relative;
-    width: 41vw;
+    width: 18em;
     margin: 3% auto;
+       font-weight: 600;
+      font-size: 2em;
+      text-align: center;
+    color: $clr-accent-400;
     &::after{
         content: "";
         position: absolute;
@@ -30,24 +39,80 @@ $bg-p:$clr-accent-500;
         transform-origin: left;
         transition: transform 500ms ease;
     }
+   
 }
+.tc:hover .h1-a::after{
+        transform: scaleX(1);
+   
+}
+
+
+ header .h1{
+    
+    text-align: center;
+    position: relative;
+    width: 41vw;
+    margin: 3% auto;
+    color: black;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 4px;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        background: black;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 500ms ease;
+    }
+}
+.h2-media::after{
+        content: "";
+        position: absolute;
+        height: 4px;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        background: black;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 500ms ease;
+    }
  header:hover .h1::after{
      transform: scaleX(1);
+}
+.bg-d:hover .h2-media::after{
+    transform: scaleX(1);
 }
 .media-body img, iframe{
     display: block;
     max-width: 100%;
 
 }
-.bg-l{background-color: $bg-d;
- }
- 
-.bg-d{
-    background-color: $bg-p;
+.bg-l{
+    border-bottom: 3px solid black;
+    background: linear-gradient(to right ,#9c5cad, #f2cc06);
+    
+    font-weight: bolder;
+    font-size: 1.6em;
     color: #ffffff;
 }
+ 
+ 
+.bg-d{
+    border-bottom: 3px solid black;
+    background: linear-gradient(to right ,#9c5cad, #8cbf3f);
+    font-weight: bolder;
+    font-size: 1.6em;
+    color: #ffffff;
+}
+
 .bg-p{
-    background-color: $bg-d;
+    border-bottom: 3px solid black;
+    background: linear-gradient(to right, #1b0322,#9c5cad);
+    font-weight: bolder;
+    font-size: 1.6em;
     color: #ffffff;
 }
 .media-body section{
@@ -70,22 +135,24 @@ $bg-p:$clr-accent-500;
 .container{
     margin-inline: auto;
 }
-.media-body h1,
- .media-body h2,
- .media-body h3,
- .media-body p{
+ h1,
+ h2,
+  h3,
+  p{
     margin-bottom: 1em;
     font-family: 'Pattaya';
     font-family: 'Henny Penny';
     font-size: 1.3125;
     font-weight: 400;
-}
-.media-body h1{
-      font-weight: 600;
-      font-size: 2em;
-      width:100%;
 
 }
+
+
+
+/* .media-body h1{
+   
+
+} */
 .media-body p{
     font-size: 1.3em;
 }
@@ -93,7 +160,8 @@ $bg-p:$clr-accent-500;
 
 .tc{
     text-align: center;
-    margin-top: 7.2rem;
+    margin: 7.2rem 0rem 7.2rem 0rem;
+    padding-bottom: 10rem;
 }
 .container--narrow{
     max-width: 34rem;
@@ -103,6 +171,8 @@ $bg-p:$clr-accent-500;
     display: flex;
     flex-direction: column;
     padding: 2em;
+    font-style: 1.3em;
+    font-weight: 900;
 }
 @media (min-width:40em){
     .split{
@@ -117,7 +187,7 @@ $bg-p:$clr-accent-500;
 }
 
 
-
+/* 
 
 .container-floats{
     position: relative;
@@ -133,22 +203,60 @@ $bg-p:$clr-accent-500;
         transform: rotate(360deg);
     }
 
-}
+} */
 
-.container-indian{
+.ind-d{
     position: relative;
-    padding: $padding2;
+    padding: 8rem;
     border-radius: 50%;
+    opacity: 0.4;
     border: 5px solid black;
     background-image: url(/photos/indian-big.jpg);
     background-position: center;
     background-size: cover;
-    transition: transform 800ms ease;
+    transition: transform 1s ease;
+    /* transition: 0.5s ease-in-out; */
+
     &:hover{
         transform: rotate(360deg);
+        opacity: 1;
     }
   }
-  .container-trees{
+  .ind-t{
+    position: relative;
+    padding: 8rem;
+    border-radius: 50%;
+    opacity: 0.4;
+    border: 5px solid black;
+    background-image: url(/photos/tree-big.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 1s ease;
+    /* transition: 0.5s ease-in-out; */
+
+    &:hover{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+  }
+  .ind-f{
+    position: relative;
+    padding: 8rem;
+    border-radius: 50%;
+    opacity: 0.4;
+    border: 5px solid black;
+    background-image: url(/photos/float-sm.png);
+    background-position: center;
+    background-size: cover;
+    transition: transform 1s ease;
+    /* transition: 0.5s ease-in-out; */
+
+    &:hover{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+  }
+/*   .container-trees{
     position: relative;
     padding: $padding2;
     border-radius: 50%;
@@ -164,9 +272,10 @@ $bg-p:$clr-accent-500;
   }
  .bg-custom,
  .bg-floats,
- .bg-trees{
+ .bg-trees,
+ {
       
-      position: absolute;
+      position: relative;
       padding: $padding2;
       border-radius: 50%;
        top: 50%;
@@ -179,13 +288,28 @@ $bg-p:$clr-accent-500;
               transition: opacity 0.5s ease-in-out;
               
             }
-  }
-   
+  } */
+/*    .div{
+    position: relative;
+    padding: 0;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9));
 
 
+   &:hover{
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+            
+   }
+   }
+ */
 
 
-
+/* 
 #custumes,
 #trees,
 #floats {
@@ -199,14 +323,15 @@ $bg-p:$clr-accent-500;
 }
 #custumes a img,
 #trees a img,
-#floats a img{
+#floats a img, */
+.media-body .ind{
     width: 50vh;
     height: auto;
     border-radius: 50%;
     
     
 }
-.caption{
+/* .caption{
     display: block;
   position: absolute;
   top: 70%;
@@ -222,7 +347,7 @@ $bg-p:$clr-accent-500;
       position: absolute;
        content: "";
        height: 4px;
-       background-color: $clr--accent-300;
+       background-color: $clr-accent-400;
        width: 80%;
        left: 0;
        right: 0;
@@ -231,7 +356,8 @@ $bg-p:$clr-accent-500;
   }
  #custumes a,
 #trees a,
-#floats a {
+#floats a, */
+.ind {
      width: 30vh;
      margin: 5px;
      
